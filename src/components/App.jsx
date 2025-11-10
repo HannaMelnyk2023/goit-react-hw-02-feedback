@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle/SectionTitle";
 import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
 
 
-class App extends Component {
+export default class App extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -42,11 +42,11 @@ class App extends Component {
         <SectionTitle title = "Statistics">
         {total > 0 ? (
           <Statistics
-            Goooood = {good}
-            Neutral= {neutral}
-            Bad = {bad}
-            Total = {total}
-             Positive feedback = {positivePercentage} />
+            good = {good}
+            neutraleutral= {neutral}
+            badad = {bad}
+            total = {total}
+             positiveFeedback = {positivePercentage} />
          
         ) : (
           <p>No feedback given</p>
