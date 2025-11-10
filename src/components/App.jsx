@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import Statistics from "./Statistics/Statistics";
+import SectionTitle from "./SectionTitle/SectionTitle";
+import feedbackOptions from "./FeedbackOptions/FeedbackOptions";
+
 
 export class App extends Component {
   state = {
