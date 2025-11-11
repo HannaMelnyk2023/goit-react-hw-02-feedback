@@ -34,7 +34,7 @@ export default class App extends Component {
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <div className='buttons'>
+      <div>
         <SectionTitle title = "Please leave Feedback">
           <FeedbackOptions options={["good", "neutral", "bad"]}
             onLeaveFeedback={this.handleFeedback} />
@@ -43,10 +43,10 @@ export default class App extends Component {
         {total > 0 ? (
           <Statistics
             good = {good}
-            neutraleutral= {neutral}
-            badad = {bad}
+            neutral= {neutral}
+            bad = {bad}
             total = {total}
-             positiveFeedback = {positivePercentage} />
+            positivePercentage = {positivePercentage} />
          
         ) : (
           <p>No feedback given</p>

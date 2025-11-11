@@ -6,9 +6,9 @@ export default class FeedbackOptions extends React.Component{
             <div className="buttons">
                 {options.map((option) => (
                     <button
-                        key={options}
+                        key={option}
                         onClick={() =>
-                            onLeaveFeedback(options)
+                            onLeaveFeedback(option)
                         }>
                         {option}</button>
                 ))}
